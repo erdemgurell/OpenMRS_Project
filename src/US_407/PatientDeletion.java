@@ -33,7 +33,6 @@ public class PatientDeletion extends BaseDriver {
         ome.myClick(ome.registrationDesk);
         ome.myClick(ome.loginButton);
     }
-
     @Test(priority = 2)
     public void patientRegistration() {
 
@@ -77,5 +76,13 @@ public class PatientDeletion extends BaseDriver {
         ome.myClick(ome.deletePatientButton);
         ome.mySendKeys(ome.deletionReason, "Privacy");
         ome.myClick(ome.deletionConfirmButton);
+    }
+    @Test(priority = 4)
+    public void verifyTheDeletion() {
+        wait.until(ExpectedConditions.visibilityOf(ome.patientSearchBox));
+        ome.mySendKeys(ome.patientSearchBox, patientCredentialsStr);
+        ome.myClick(ome.searchedPatient);
+        wait.until(ExpectedConditions.elementToBeClickable(ome.noMatchingRecordMsg));
+        Assert.assertEquals(ome.noMatchingRecordMsg.getText(), "No matching records found");
     }
 }
