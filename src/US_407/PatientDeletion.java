@@ -33,4 +33,41 @@ public class PatientDeletion extends BaseDriver {
         ome.myClick(ome.registrationDesk);
         ome.myClick(ome.loginButton);
     }
+    @Test(priority = 2)
+    public void patientRegistration() {
+
+        wait.until(ExpectedConditions.elementToBeClickable(ome.registerAPatient));
+        ome.myClick(ome.registerAPatient);
+        ome.mySendKeys(ome.givenNamePlc, nameStr);
+        ome.mySendKeys(ome.familyNamePlc, lastNameStr);
+        ome.myClick(ome.nextButton);
+
+        Select select = new Select(ome.genderSelect);
+        select.selectByVisibleText("Female");
+
+        ome.myClick(ome.nextButton);
+        ome.mySendKeys(ome.birthDay, birthDayStr);
+
+        select = new Select(ome.birthMonthSelect);
+        select.selectByVisibleText("January");
+
+        ome.mySendKeys(ome.birthYear, birtYearStr);
+        ome.myClick(ome.nextButton);
+        ome.mySendKeys(ome.address1, addressStr);
+        ome.mySendKeys(ome.cityVillage, cityStr);
+        ome.mySendKeys(ome.stateProvince, provinceStr);
+        ome.mySendKeys(ome.country, countryStr);
+        ome.mySendKeys(ome.postalCode, postalCodeStr);
+        ome.myClick(ome.nextButton);
+        ome.mySendKeys(ome.phoneNumber, phoneNumberStr);
+        ome.myClick(ome.nextButton);
+
+        select = new Select(ome.relationshipTypeSelect);
+        select.selectByVisibleText("Parent");
+
+        ome.mySendKeys(ome.personName, patientRelativeStr);
+        ome.myClick(ome.nextButton);
+        ome.myClick(ome.confirmButton);
+
+    }
 }
