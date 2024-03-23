@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_logging_log4j_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_logging_log4j_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_io.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/seleniumhq_selenium_java.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_nop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/testng.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OpenMRS_Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utility/BaseDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utility/Tools.java" afterDir="false" />
+    <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment="Initial Commit &gt; BaseDriver,Tools,ParentPage formatting fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,50 +58,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\E.Gürel\IdeaProjects\OpenMRS_Project\src\Utility" />
     </key>
-  </component>
-  <component name="RunManager" selected="TestNG.den.test">
-    <configuration name="den" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenMRS_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="den" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="den.te" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenMRS_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="den" />
-      <option name="METHOD_NAME" value="te" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="den.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenMRS_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="den" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG.den.test" />
-        <item itemvalue="TestNG.den" />
-        <item itemvalue="TestNG.den.te" />
-      </list>
-    </recent_temporary>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Utility" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -137,6 +80,39 @@
       <option name="presentableId" value="Default" />
       <updated>1711178543836</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit &gt; BaseDriver,Tools,ParentPage added">
+      <option name="closed" value="true" />
+      <created>1711180604433</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711180604433</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial Commit &gt; BaseDriver,Tools,ParentPage formatting fix">
+      <option name="closed" value="true" />
+      <created>1711181002883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711181002883</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit &gt; BaseDriver,Tools,ParentPage added" />
+    <MESSAGE value="Initial Commit &gt; BaseDriver,Tools,ParentPage formatting fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit &gt; BaseDriver,Tools,ParentPage formatting fix" />
   </component>
 </project>

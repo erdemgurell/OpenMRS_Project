@@ -11,21 +11,21 @@ import org.testng.annotations.*;
 import java.time.Duration;
 
 public class BaseDriver {
-    Logger logger = LogManager.getLogger(); // logları ekleyeceğim nesneyi başlattık.
+    Logger logger = LogManager.getLogger();
 
     public static WebDriver driver;
     public static WebDriverWait wait;
     public static OpenMRS_Elements ome;
 
     @BeforeClass
-    public void InitialProcedure() { // TearStart böyle deniyor
+    public void InitialProcedure() {
 
         driver = new ChromeDriver();
 
-        //driver.manage().window().maximize(); // Ekranı max yapıyor.
+        //driver.manage().window().maximize(); // Maximize window
 
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15)); // 20 sn mühlet: sayfayı yükleme mühlet
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // 20 sn mühlet: elementi bulma mühleti
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         ome = new OpenMRS_Elements();
         LoginTest();
