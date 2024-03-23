@@ -9,6 +9,7 @@ public class OpenMRS_Elements extends ParentPage {
     public OpenMRS_Elements() {
         PageFactory.initElements(BaseDriver.driver, this);
     }
+
     @FindBy(id = "username")
     public WebElement usernamePlc;
     @FindBy(id = "password")
@@ -23,7 +24,7 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement registerAPatient;
     @FindBy(xpath = "//input[@name='givenName']")
     public WebElement givenNamePlc;
-    @FindBy (xpath = "//input[@name='middleName']")
+    @FindBy(xpath = "//input[@name='middleName']")
     public WebElement middleNamePlc;
     @FindBy(xpath = "//input[@name='familyName']")
     public WebElement familyNamePlc;
@@ -46,7 +47,7 @@ public class OpenMRS_Elements extends ParentPage {
     @FindBy(xpath = "//input[@id='cityVillage']")
     public WebElement cityVillage;
     @FindBy(xpath = "//input[@id='stateProvince']")
-    public WebElement StateProvince;
+    public WebElement stateProvince;
     @FindBy(xpath = "//input[@id='country']")
     public WebElement country;
     @FindBy(xpath = "//input[@id='postalCode']")
@@ -65,6 +66,14 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement patientSearchBox;
     @FindBy(xpath = "//td[contains(text(),'Cosette Tholomyes')]")
     public WebElement searchedPatient;
+    @FindBy(xpath = "//div[contains(text(),'Delete Patient')]")
+    public WebElement deletePatientButton;
+    @FindBy(xpath = "//input[@id='delete-reason']")
+    public WebElement deletionReason;
+    @FindBy(xpath = "(//button[@class='confirm right'])[6]")
+    public WebElement deletionConfirmButton;
+    @FindBy(xpath = "(//td[contains(text(),'No matching records found')]")
+    public WebElement noMatchingRecordMsg;
 
 
 }
