@@ -33,6 +33,7 @@ public class PatientDeletion extends BaseDriver {
         ome.myClick(ome.registrationDesk);
         ome.myClick(ome.loginButton);
     }
+
     @Test(priority = 2)
     public void patientRegistration() {
 
@@ -69,5 +70,12 @@ public class PatientDeletion extends BaseDriver {
         ome.myClick(ome.nextButton);
         ome.myClick(ome.confirmButton);
 
+    }
+    @Test(priority = 3)
+    public void deleteThePatientRecord() {
+        wait.until(ExpectedConditions.elementToBeClickable(ome.deletePatientButton));
+        ome.myClick(ome.deletePatientButton);
+        ome.mySendKeys(ome.deletionReason, "Privacy");
+        ome.myClick(ome.deletionConfirmButton);
     }
 }
