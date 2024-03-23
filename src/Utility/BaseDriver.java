@@ -32,20 +32,20 @@ public class BaseDriver {
     }
 
     @AfterClass
-    public void CloseProcedure() { // TearDown
+    public void CloseProcedure() {
         Tools.wait(2);
         driver.quit();
 
-        logger.info("Driver Closed"); // normal bir info
+        logger.info("Driver Closed");
 
     }
 
     public void LoginTest() {
-        logger.info("Login Page Procedure Started"); // normal bir info
+        logger.info("Login Page Procedure Started");
 
         driver.get("https://demo.openmrs.org/openmrs/");
 
-        logger.info("Login Page Procedure Finished"); // normal bir info
+        logger.info("Login Page Procedure Finished");
     }
 
     @BeforeMethod
@@ -54,7 +54,7 @@ public class BaseDriver {
     }
 
     @AfterMethod
-    public void afterMethod(ITestResult result) { // testin sonuç ve isim bilgisini olduğu değişkeni
+    public void afterMethod(ITestResult result) {
         logger.info(result.getName() + " Method finished " + (result.getStatus() == 1 ? "Passed" : "failed"));
     }
 
