@@ -13,27 +13,27 @@ import java.time.Duration;
 public class ParentPage {
     public WebDriverWait wait = new WebDriverWait(BaseDriver.driver, Duration.ofSeconds(10));
 
-    public void myClick(WebElement e){
+    public void myClick(WebElement e) {
         wait.until(ExpectedConditions.elementToBeClickable(e));
         scrollToElement(e);
         e.click();
     }
 
-    public void mySendKeys(WebElement e, String txt){
+    public void mySendKeys(WebElement e, String txt) {
         wait.until(ExpectedConditions.visibilityOf(e));
         scrollToElement(e);
         e.clear();
         e.sendKeys(txt);
     }
 
-    public void scrollToElement(WebElement e){
+    public void scrollToElement(WebElement e) {
         JavascriptExecutor js = (JavascriptExecutor) BaseDriver.driver;
         js.executeScript("arguments[0].scrollIntoView();", e);
     }
 
 
-    public void verifyContainsText(WebElement e, String txt){
-        wait.until(ExpectedConditions.textToBePresentInElement(e,txt));
+    public void verifyContainsText(WebElement e, String txt) {
+        wait.until(ExpectedConditions.textToBePresentInElement(e, txt));
         Assert.assertTrue(e.getText().toLowerCase().contains(txt.toLowerCase()));
 
         //sayfaya ESC tuşu gönderildi
