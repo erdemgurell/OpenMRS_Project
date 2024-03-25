@@ -78,9 +78,10 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement noMatchingRecordMsg;
     @FindBy(css = "tbody > tr")
     public List<WebElement> patientList;
-
     @FindBy(id = "patient-search-results-table_info")
     public WebElement patientListInfo;
+    @FindBy(id = "patient-search-results-table_next")
+    public WebElement patientListNextBtn;
 
 
 }
