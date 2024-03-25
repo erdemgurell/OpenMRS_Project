@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class OpenMRS_Elements extends ParentPage {
 
     public OpenMRS_Elements() {
@@ -74,6 +76,11 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement deletionConfirmButton;
     @FindBy(xpath = "(//td[contains(text(),'No matching records found')]")
     public WebElement noMatchingRecordMsg;
+    @FindBy(css = "tbody > tr")
+    public List<WebElement> patientList;
+
+    @FindBy(id = "patient-search-results-table_info")
+    public WebElement patientListInfo;
 
 
 }
