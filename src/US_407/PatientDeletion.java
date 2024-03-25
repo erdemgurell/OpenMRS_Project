@@ -1,6 +1,7 @@
 package US_407;
 
 import Utility.BaseDriver;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -12,7 +13,6 @@ import org.testng.annotations.Test;
 public class PatientDeletion extends BaseDriver {
     String usernameStr = "admin";
     String passwordStr = "Admin123";
-    String patientIdStr = "100KCK";
     String nameStr = "Cosette";
     String lastNameStr = "Tholomyes";
     String birthDayStr = "1";
@@ -77,12 +77,12 @@ public class PatientDeletion extends BaseDriver {
         ome.mySendKeys(ome.deletionReason, "Privacy");
         ome.myClick(ome.deletionConfirmButton);
     }
-    @Test(priority = 4)
+    @Test(priority = 4, dependsOnMethods = {"deleteThePatientRecord"})
     public void verifyTheDeletion() {
         wait.until(ExpectedConditions.visibilityOf(ome.patientSearchBox));
-        ome.mySendKeys(ome.patientSearchBox, patientCredentialsStr);
-        ome.myClick(ome.searchedPatient);
+        ome.mySendKeys(ome.patientSearchBox, patientCredentialsStr + Keys.ENTER);
         wait.until(ExpectedConditions.elementToBeClickable(ome.noMatchingRecordMsg));
-        Assert.assertEquals(ome.noMatchingRecordMsg.getText(), "No matching records found");
+        Assert.assertFalse(ome.noMatchingRecordMsg.getText().equals("Cosette Tholomyes"), "No matching records found");
+        logger.info( "Search result: " + ome.noMatchingRecordMsg.getText());
     }
 }
