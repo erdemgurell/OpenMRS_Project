@@ -25,7 +25,10 @@ public class PatientListing extends BaseDriver {
         // Create String[] from it
         String[] listArr = substring.trim().split("\\s+");
 
+        // Take entry number current page and check if its showing correct number info
+        int pageEntryNum = Integer.parseInt(listArr[1]);
 
+        Assert.assertEquals(pageEntryNum, ome.patientList.size());
 
 
 
