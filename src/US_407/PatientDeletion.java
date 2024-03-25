@@ -31,8 +31,8 @@ public class PatientDeletion extends BaseDriver {
     @Test(priority = 1)
     public void login() {
 
-        //Log in to the application homepage as an admin user.
-        //Enter the valid credentials (valid credentials are specified above.)
+        // Log in to the application homepage as an admin user.
+        // Enter the valid credentials (valid credentials are specified above.)
         ome.mySendKeys(ome.usernamePlc, usernameStr);
         ome.mySendKeys(ome.passwordPlc, passwordStr);
         ome.myClick(ome.registrationDesk);
