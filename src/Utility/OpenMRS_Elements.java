@@ -83,5 +83,4 @@ public class OpenMRS_Elements extends ParentPage {
     @FindBy(id = "patient-search-results-table_next")
     public WebElement patientListNextBtn;
 
-
 }
