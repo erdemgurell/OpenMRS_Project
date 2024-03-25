@@ -1,6 +1,7 @@
 package US_408;
 
 import Utility.BaseDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,16 +20,32 @@ public class PatientListing extends BaseDriver {
         // Click "Find Patient Record" button
         ome.myClick(ome.findPatientRecord);
 
-        // Take the list of entries info and delete everything except numbers
-        String substring = ome.patientListInfo.getText().replaceAll("[^0-9 ]","");
 
-        // Create String[] from it
-        String[] listArr = substring.trim().split("\\s+");
+        int listTotal = 0; // patient list total size
 
-        // Take entry number current page and check if its showing correct number info
-        int pageEntryNum = Integer.parseInt(listArr[1]);
+        // While still next page continue
+        while (true){
+            // Take the list of entries info and delete everything except numbers
+            String substring = ome.patientListInfo.getText().replaceAll("[^0-9 ]","");
 
-        Assert.assertEquals(pageEntryNum, ome.patientList.size());
+            // Create String[] from it
+            String[] listArr = substring.trim().split("\\s+");
+
+            // Take entry number current page and check if its showing correct number info
+            int pageEntryNum = Integer.parseInt(listArr[1]);
+
+            listTotal += ome.patientList.size();
+            Assert.assertEquals(pageEntryNum, listTotal);
+
+            // Check if we reached last page
+            if (listArr[1].equals(listArr[2])){
+                break;
+            }
+            else {
+                ome.myClick(ome.patientListNextBtn);
+            }
+        }
+
 
 
 
