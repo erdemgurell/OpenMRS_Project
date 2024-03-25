@@ -72,7 +72,7 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement deletionReason;
     @FindBy(xpath = "(//button[@class='confirm right'])[6]")
     public WebElement deletionConfirmButton;
-    @FindBy(xpath = "(//td[contains(text(),'No matching records found')]")
+    @FindBy(xpath = "//td[contains(text(),'No matching records found')]")
     public WebElement noMatchingRecordMsg;
 
 
