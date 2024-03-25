@@ -1,10 +1,9 @@
 package US_408;
 
 import Utility.BaseDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-import java.util.Collections;
 
 public class PatientListing extends BaseDriver {
     String usernameStr = "admin";
@@ -16,6 +15,18 @@ public class PatientListing extends BaseDriver {
         ome.mySendKeys(ome.passwordPlc,passwordStr);
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
+
+        // Click "Find Patient Record" button
+        ome.myClick(ome.findPatientRecord);
+
+        // Take the list of entries info and delete everything except numbers
+        String substring = ome.patientListInfo.getText().replaceAll("[^0-9 ]","");
+
+        // Create String[] from it
+        String[] listArr = substring.trim().split("\\s+");
+
+
+
 
 
     }
