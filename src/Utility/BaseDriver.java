@@ -11,7 +11,7 @@ import org.testng.annotations.*;
 import java.time.Duration;
 
 public class BaseDriver {
-    Logger logger = LogManager.getLogger();
+    public static Logger logger = LogManager.getLogger();
 
     public static WebDriver driver;
     public static WebDriverWait wait;
