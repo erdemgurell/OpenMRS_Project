@@ -7,7 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class MyAccount extends BaseDriver {
-
+    // Username:"admin"
+    // Password: "Admin123"
     @Test
     public void myAccountTest(){
         Actions act=new Actions(driver);
