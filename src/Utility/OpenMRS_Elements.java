@@ -82,5 +82,14 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement patientListInfo;
     @FindBy(id = "patient-search-results-table_next")
     public WebElement patientListNextBtn;
+    @FindBy(xpath = "//a[@id='appointmentschedulingui-homeAppLink-appointmentschedulingui-homeAppLink-extension']")
+    public WebElement appointmentScheduling;
+    @FindBy(xpath = "//a[@id='appointmentschedulingui-manageAppointments-app']")
+    public WebElement manageAppointments;
+    @FindBy(xpath = "//p[contains(text(),'Your computer is not set to the right time zone. P')]")
+    public WebElement timeZoneWarningMessage;
+    @FindBy(xpath = "//td[contains(text(),'Robert Smith')]")
+    public WebElement getSearchedPatientForApt;
+
 
 }
