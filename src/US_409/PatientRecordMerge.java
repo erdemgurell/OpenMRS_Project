@@ -38,6 +38,14 @@ public class PatientRecordMerge extends BaseDriver {
 
         ome.myClick(ome.nextButton);
 
+        // Patient address information
+        ome.mySendKeys(ome.address1, "Readers St 2423, Andersonville, Malawi, 326145");
+        ome.mySendKeys(ome.cityVillage, "Nenana");
+        ome.mySendKeys(ome.stateProvince, "Gig Harbor");
+        ome.mySendKeys(ome.country, "France");
+        ome.mySendKeys(ome.postalCode, "73438");
+
+        ome.myClick(ome.nextButton);
 
     }
 
