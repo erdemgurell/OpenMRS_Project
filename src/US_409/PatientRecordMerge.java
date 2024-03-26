@@ -18,6 +18,13 @@ public class PatientRecordMerge extends BaseDriver {
         // Click "Register a Patient" button
         ome.myClick(ome.registerAPatient);
 
+        // Patient full name info
+        ome.mySendKeys(ome.givenNamePlc,"Roshaunda");
+        ome.mySendKeys(ome.middleNamePlc,"Kenyanna");
+        ome.mySendKeys(ome.familyNamePlc,"Petitt");
+        ome.myClick(ome.nextButton);
+
+
 
     }
 
