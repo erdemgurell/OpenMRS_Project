@@ -8,13 +8,17 @@ public class PatientRecordMerge extends BaseDriver {
     String usernameStr = "admin";
     String passwordStr = "Admin123";
 
-    @Test()
-    public void patientRecordMerge() {
+    @Test(priority = 1)
+    public void login() {
         // Login procedure
         ome.mySendKeys(ome.usernamePlc, usernameStr);
         ome.mySendKeys(ome.passwordPlc, passwordStr);
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
+    }
+
+    @Test(dependsOnMethods = "login", priority = 2)
+    public void firstPatient() {
 
         // Click "Register a Patient" button
         ome.myClick(ome.registerAPatient);
@@ -27,13 +31,15 @@ public class PatientRecordMerge extends BaseDriver {
         ome.myClick(ome.nextButton);
 
         // Select Gender
-        Select genderSelect = new Select(ome.genderSelect);
-        genderSelect.selectByIndex(1);
+        Select select = new Select(ome.genderSelect);
+        select.selectByIndex(1);
 
         // Enter birthdate information
-        ome.mySendKeys(ome.birthDay, "05");
-        Select monthSelect = new Select(ome.birthMonthSelect);
-        monthSelect.selectByIndex(8);
+        ome.mySendKeys(ome.birthDay, "21");
+
+        select = new Select(ome.birthMonthSelect);
+        select.selectByIndex(8);
+
         ome.mySendKeys(ome.birthYear, "1998");
 
         ome.myClick(ome.nextButton);
@@ -47,7 +53,56 @@ public class PatientRecordMerge extends BaseDriver {
 
         ome.myClick(ome.nextButton);
 
+        // Phone number
+        ome.mySendKeys(ome.phoneNumber, "13391");
+
+        ome.myClick(ome.nextButton);
+
+        ome.myClick(ome.confirmButton);
+
     }
 
+    @Test(dependsOnMethods = {"login", "firstPatient"}, priority = 3)
+    public void secondPatient() {
+        // Click "Register a Patient" button
+        ome.myClick(ome.registerAPatient);
+
+        // Patient full name info
+        ome.mySendKeys(ome.givenNamePlc, "Nava");
+        ome.mySendKeys(ome.middleNamePlc, "Lashara");
+        ome.mySendKeys(ome.familyNamePlc, "Agan");
+
+        ome.myClick(ome.nextButton);
+
+        // Select Gender
+        Select select = new Select(ome.genderSelect);
+        select.selectByIndex(0);
+
+        // Enter birthdate information
+        ome.mySendKeys(ome.birthDay, "15");
+
+        select = new Select(ome.birthMonthSelect);
+        select.selectByIndex(4);
+
+        ome.mySendKeys(ome.birthYear, "1998");
+
+        ome.myClick(ome.nextButton);
+
+        // Patient address information
+        ome.mySendKeys(ome.address1, "Geography Street 266, Mastic Beach, Australia, 529179");
+        ome.mySendKeys(ome.cityVillage, "Suwanee");
+        ome.mySendKeys(ome.stateProvince, "Gallagher");
+        ome.mySendKeys(ome.country, "Barbados");
+        ome.mySendKeys(ome.postalCode, "63351");
+
+        ome.myClick(ome.nextButton);
+
+        // Phone number
+        ome.mySendKeys(ome.phoneNumber, "4643344");
+
+        ome.myClick(ome.nextButton);
+
+        ome.myClick(ome.confirmButton);
+    }
 
 }

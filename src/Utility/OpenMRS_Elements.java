@@ -84,5 +84,9 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement patientListInfo;
     @FindBy(id = "patient-search-results-table_next")
     public WebElement patientListNextBtn;
+    @FindBy(css = "div[class=\"logo\"]")
+    public WebElement homePageBtn;
+    @FindBy(css = "div[class=\"float-sm-right\"] span")
+    public WebElement patientID;
 
 }
