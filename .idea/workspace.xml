@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment=" A test case for patient record deletion implemented">
+      <change afterPath="$PROJECT_DIR$/src/US_405/MyAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/US_407/PatientDeletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/US_407/PatientDeletion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
     </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="24b9c14a-c307-4247-a943-97ffaa69c708" />
+        <option name="accountId" value="56c6b91d-c95b-47dc-a3b9-2e1bccf9ba2e" />
         <option name="url" value="https://github.com/artam109/OpenMRS_Project" />
       </UrlAndAccount>
     </option>
@@ -55,7 +57,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2e4zGNprnhdsWpHmN5KeSDAc7IB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,7 +78,7 @@
     &quot;TestNG.den.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.den.te.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.den.test.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;NigarAyla&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Ahmet&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/E.Gürel/IdeaProjects/OpenMRS_Project/src/Utility&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
@@ -87,7 +91,42 @@
       <recent name="C:\Users\E.Gürel\IdeaProjects\OpenMRS_Project\src\Utility" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PatientDeletion">
+  <component name="RunManager" selected="TestNG.MyAccount">
+    <configuration name="MyAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenMRS_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="US_405.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="US_405" />
+      <option name="MAIN_CLASS_NAME" value="US_405.MyAccount" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyAccount.myAccountTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenMRS_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="US_405.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="US_405" />
+      <option name="MAIN_CLASS_NAME" value="US_405.MyAccount" />
+      <option name="METHOD_NAME" value="myAccountTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PatientDeletion" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenMRS_Project" />
       <extension name="coverage">
@@ -123,29 +162,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="den" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenMRS_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="den" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="den.te" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenMRS_Project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="den" />
-      <option name="METHOD_NAME" value="te" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="den.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenMRS_Project" />
       <option name="PACKAGE_NAME" value="" />
@@ -160,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MyAccount" />
+        <item itemvalue="TestNG.MyAccount.myAccountTest" />
         <item itemvalue="TestNG.PatientDeletion" />
         <item itemvalue="TestNG.PatientDeletion.login" />
         <item itemvalue="TestNG.den.test" />
-        <item itemvalue="TestNG.den" />
-        <item itemvalue="TestNG.den.te" />
       </list>
     </recent_temporary>
   </component>

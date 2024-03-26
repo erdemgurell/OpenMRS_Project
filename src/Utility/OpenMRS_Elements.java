@@ -74,6 +74,15 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement deletionConfirmButton;
     @FindBy(xpath = "(//td[contains(text(),'No matching records found')]")
     public WebElement noMatchingRecordMsg;
+    @FindBy(xpath = "//li[@class='nav-item identifier']")
+    public WebElement adminButton;
+    @FindBy(xpath = "//*[@id='user-account-menu']/li/a")
+    public WebElement myAccount;
+    @FindBy(xpath = "//div[@id='tasks']//a[1]")
+    public WebElement changePassword;
+    @FindBy(xpath = "//div[@id='tasks']//a[2]")
+    public WebElement myLanguages;
+
 
 
 }
