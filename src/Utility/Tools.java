@@ -25,7 +25,7 @@ public class Tools extends BaseDriver {
 
     public static void JSClick(WebElement e) {
         JavascriptExecutor js = (JavascriptExecutor) BaseDriver.driver;
-        js.executeScript("arguments[0].click();", e); // js click : sayfanın içinden click
+        js.executeScript("arguments[0].click();", e);
     }
 
     public static int randomGenerator(int range) {
