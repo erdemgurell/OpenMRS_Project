@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment="US_409 Patient gender and birthdate">
+    <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment="US_409 Patient address information">
       <change beforePath="$PROJECT_DIR$/src/US_409/PatientRecordMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/US_409/PatientRecordMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +162,7 @@
         <item itemvalue="TestNG.PatientListing.patientListing" />
         <item itemvalue="TestNG.PatientListing.login" />
         <item itemvalue="TestNG.PatientListing.login" />
-        <item itemvalue="TestNG.PatientListing.login" />
+        <item itemvalue="TestNG.PatientRecordMerge.patientRecordMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711438246106</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="US_409 Patient address information">
+      <option name="closed" value="true" />
+      <created>1711438895530</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711438895530</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,6 +309,7 @@
     <MESSAGE value="US_409 Initial Commit and some other changes" />
     <MESSAGE value="US_409 Patient full name info filled" />
     <MESSAGE value="US_409 Patient gender and birthdate" />
-    <option name="LAST_COMMIT_MESSAGE" value="US_409 Patient gender and birthdate" />
+    <MESSAGE value="US_409 Patient address information" />
+    <option name="LAST_COMMIT_MESSAGE" value="US_409 Patient address information" />
   </component>
 </project>
