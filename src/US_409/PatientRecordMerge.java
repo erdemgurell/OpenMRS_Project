@@ -1,12 +1,20 @@
 package US_409;
 
 import Utility.BaseDriver;
+import Utility.ParentPage;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
 public class PatientRecordMerge extends BaseDriver {
+    ParentPage pp = new ParentPage();
     String usernameStr = "admin";
     String passwordStr = "Admin123";
+    String ID1;
+    String ID2;
 
     @Test(priority = 1)
     public void login() {
@@ -17,7 +25,7 @@ public class PatientRecordMerge extends BaseDriver {
         ome.myClick(ome.loginButton);
     }
 
-    @Test(dependsOnMethods = "login", priority = 2)
+    @Test(priority = 2)
     public void firstPatient() {
 
         // Click "Register a Patient" button
@@ -33,6 +41,8 @@ public class PatientRecordMerge extends BaseDriver {
         // Select Gender
         Select select = new Select(ome.genderSelect);
         select.selectByIndex(1);
+
+        ome.myClick(ome.nextButton);
 
         // Enter birthdate information
         ome.mySendKeys(ome.birthDay, "21");
@@ -55,14 +65,17 @@ public class PatientRecordMerge extends BaseDriver {
 
         // Phone number
         ome.mySendKeys(ome.phoneNumber, "13391");
+        ome.myClick(ome.nextButton);
 
         ome.myClick(ome.nextButton);
 
         ome.myClick(ome.confirmButton);
+        ID1 = ome.patientID.getText();
 
+        ome.myClick(ome.homePageBtn);
     }
 
-    @Test(dependsOnMethods = {"login", "firstPatient"}, priority = 3)
+    @Test(priority = 3)
     public void secondPatient() {
         // Click "Register a Patient" button
         ome.myClick(ome.registerAPatient);
@@ -77,6 +90,8 @@ public class PatientRecordMerge extends BaseDriver {
         // Select Gender
         Select select = new Select(ome.genderSelect);
         select.selectByIndex(0);
+
+        ome.myClick(ome.nextButton);
 
         // Enter birthdate information
         ome.mySendKeys(ome.birthDay, "15");
@@ -101,8 +116,35 @@ public class PatientRecordMerge extends BaseDriver {
         ome.mySendKeys(ome.phoneNumber, "4643344");
 
         ome.myClick(ome.nextButton);
+        ome.myClick(ome.nextButton);
 
         ome.myClick(ome.confirmButton);
+
+        ID2 = ome.patientID.getText();
+
+        ome.myClick(ome.homePageBtn);
     }
 
+    @Test(priority = 4)
+    public void patientRecordMerge() {
+
+        // Navigate to Merge Patient Page
+        ome.myClick(ome.dataManagement);
+        ome.myClick(ome.mergePatientBtn);
+
+        // Merge Patients
+        ome.mySendKeys(ome.patient1, ID1);
+        ome.mySendKeys(ome.patient2, ID2);
+        new Actions(driver).sendKeys(Keys.ENTER).build().perform();
+        ome.myClick(ome.mergeContinueBtn);
+
+        pp.verifyContainsText(ome.beforeMergeMessage,"undone");
+
+        ome.myClick(ome.secondPatient);
+        ome.myClick(ome.mergeContinueBtn);
+
+
+        // Assertion for success message
+        Assert.assertEquals(ome.mergedPatientIDs.size(),2);
+    }
 }
