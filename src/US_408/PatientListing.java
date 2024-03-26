@@ -10,7 +10,7 @@ public class PatientListing extends BaseDriver {
     String usernameStr = "admin";
     String passwordStr = "Admin123";
     @Test
-    public void login(){
+    public void patientListing(){
         // Login procedure
         ome.mySendKeys(ome.usernamePlc,usernameStr);
         ome.mySendKeys(ome.passwordPlc,passwordStr);
@@ -45,9 +45,6 @@ public class PatientListing extends BaseDriver {
                 ome.myClick(ome.patientListNextBtn);
             }
         }
-
-
-
 
     }
 

@@ -36,7 +36,7 @@ public class ParentPage {
         wait.until(ExpectedConditions.textToBePresentInElement(e, txt));
         Assert.assertTrue(e.getText().toLowerCase().contains(txt.toLowerCase()));
 
-        //sayfaya ESC tuşu gönderildi
+        //ESC button in case of close notification
         new Actions(BaseDriver.driver).sendKeys(Keys.ESCAPE).build().perform();
     }
 

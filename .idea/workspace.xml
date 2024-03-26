@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment="US_408 Initial Commit &gt; Login">
+    <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment="Logger declared as static">
+      <change afterPath="$PROJECT_DIR$/src/US_409/PatientRecordMerge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/US_408/PatientListing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/US_408/PatientListing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/ParentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/ParentPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="_invalid_" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +81,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.PatientListing.login.executor": "Run",
+    "TestNG.PatientListing.login.executor": "Debug",
+    "TestNG.PatientListing.patientListing.executor": "Run",
+    "TestNG.PatientRecordMerge.patientRecordMerge.executor": "Run",
     "TestNG.den.executor": "Run",
     "TestNG.den.te.executor": "Run",
     "TestNG.den.test.executor": "Run",
@@ -86,8 +91,8 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/E.Gürel/IdeaProjects/OpenMRS_Project/src/Utility",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.29770115"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -98,7 +103,7 @@
       <recent name="Utility" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.PatientRecordMerge.patientRecordMerge">
     <configuration name="PatientListing.login" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenMRS_Project" />
       <extension name="coverage">
@@ -117,8 +122,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PatientListing.patientListing" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenMRS_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="US_408.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="US_408" />
+      <option name="MAIN_CLASS_NAME" value="US_408.PatientListing" />
+      <option name="METHOD_NAME" value="patientListing" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientRecordMerge.patientRecordMerge" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenMRS_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="US_409.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="US_409" />
+      <option name="MAIN_CLASS_NAME" value="US_409.PatientRecordMerge" />
+      <option name="METHOD_NAME" value="patientRecordMerge" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PatientRecordMerge.patientRecordMerge" />
+        <item itemvalue="TestNG.PatientListing.patientListing" />
+        <item itemvalue="TestNG.PatientListing.login" />
+        <item itemvalue="TestNG.PatientListing.login" />
         <item itemvalue="TestNG.PatientListing.login" />
       </list>
     </recent_temporary>
@@ -173,7 +218,31 @@
       <option name="project" value="LOCAL" />
       <updated>1711349763586</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="US_408 Take entry number current page and check if its showing correct number info">
+      <option name="closed" value="true" />
+      <created>1711352456166</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711352456166</updated>
+    </task>
+    <task id="LOCAL-00006" summary="US_408 Click next if there is next page">
+      <option name="closed" value="true" />
+      <created>1711355483563</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711355483563</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Logger declared as static">
+      <option name="closed" value="true" />
+      <created>1711359731829</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711359731829</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +256,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Erdem" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -204,6 +273,9 @@
     <MESSAGE value="Initial Commit &gt; BaseDriver,Tools,ParentPage formatting fix" />
     <MESSAGE value="US_408 Initial Commit" />
     <MESSAGE value="US_408 Initial Commit &gt; Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="US_408 Initial Commit &gt; Login" />
+    <MESSAGE value="US_408 Take entry number of current page and check if it's showing correct number info" />
+    <MESSAGE value="US_408 Click next if there is next page" />
+    <MESSAGE value="Logger declared as static" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logger declared as static" />
   </component>
 </project>

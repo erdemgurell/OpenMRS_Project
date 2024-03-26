@@ -22,7 +22,9 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement registrationDesk;
     @FindBy(id = "loginButton")
     public WebElement loginButton;
-    @FindBy(xpath = "//a[@id='referenceapplication-registrationapp-registerPatient-homepageLink-referenceapplication-registrationapp-registerPatient-homepageLink-extension']")
+    @FindBy(xpath = "//a[@id='referenceapplication-registrationapp" +
+            "-registerPatient-homepageLink-referenceapplication-registrationapp" +
+            "-registerPatient-homepageLink-extension']")
     public WebElement registerAPatient;
     @FindBy(xpath = "//input[@name='givenName']")
     public WebElement givenNamePlc;
