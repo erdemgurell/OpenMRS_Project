@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment="US_409 test structure changed patients added in different methods and some elements added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/US_409/PatientRecordMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/US_409/PatientRecordMerge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/BaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/BaseDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/Tools.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +78,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.PatientListing.login.executor": "Debug",
     "TestNG.PatientListing.patientListing.executor": "Run",
-    "TestNG.PatientRecordMerge.executor": "Run",
-    "TestNG.PatientRecordMerge.login.executor": "Run",
-    "TestNG.PatientRecordMerge.patientRecordMerge.executor": "Run",
+
     "TestNG.den.executor": "Run",
     "TestNG.den.te.executor": "Run",
     "TestNG.den.test.executor": "Run",
-    "git-widget-placeholder": "Erdem",
+    "git-widget-placeholder": "NigarAyla",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/E.Gürel/IdeaProjects/OpenMRS_Project/src/Utility",
     "project.structure.last.edited": "Libraries",
@@ -106,18 +99,47 @@
       <recent name="Utility" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="PatientRecordMerge" type="TestNG" temporary="true" nameIsGenerated="true">
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SystemTimeZone" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OpenMRS_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="US_409.*" />
+          <option name="PATTERN" value="US_410.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="US_409" />
-      <option name="MAIN_CLASS_NAME" value="US_409.PatientRecordMerge" />
+      <option name="PACKAGE_NAME" value="US_410" />
+      <option name="MAIN_CLASS_NAME" value="US_410.SystemTimeZone" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="den.te" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenMRS_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="den" />
+      <option name="METHOD_NAME" value="te" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="den.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OpenMRS_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="den" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -126,7 +148,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PatientRecordMerge" />
       </list>
     </recent_temporary>
   </component>
@@ -236,15 +257,6 @@
       <option name="project" value="LOCAL" />
       <updated>1711438895530</updated>
     </task>
-    <task id="LOCAL-00012" summary="US_409 test structure changed patients added in different methods and some elements added">
-      <option name="closed" value="true" />
-      <created>1711441086890</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1711441086890</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,7 +294,6 @@
     <MESSAGE value="US_409 Patient full name info filled" />
     <MESSAGE value="US_409 Patient gender and birthdate" />
     <MESSAGE value="US_409 Patient address information" />
-    <MESSAGE value="US_409 test structure changed patients added in different methods and some elements added" />
-    <option name="LAST_COMMIT_MESSAGE" value="US_409 test structure changed patients added in different methods and some elements added" />
+
   </component>
 </project>
