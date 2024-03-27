@@ -22,7 +22,7 @@ public class BaseDriver {
 
         driver = new ChromeDriver();
 
-        driver.manage().window().maximize(); // Maximize window
+        driver.manage().window().maximize();
 
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

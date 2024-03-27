@@ -88,5 +88,22 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement homePageBtn;
     @FindBy(css = "div[class=\"float-sm-right\"] span")
     public WebElement patientID;
+    @FindBy(css = "a[id=\"coreapps-datamanagement-homepageLink-coreapps-datamanagement-homepageLink-extension\"]")
+    public WebElement dataManagement;
+    @FindBy(css = "a[id=\"coreapps-mergePatientsHomepageLink-app\"]")
+    public WebElement mergePatientBtn;
+    @FindBy(id = "patient1-text")
+    public WebElement patient1;
+    @FindBy(id = "patient2-text")
+    public WebElement patient2;
+    @FindBy(id = "confirm-button")
+    public WebElement mergeContinueBtn;
+    @FindBy(id = "second-patient")
+    public WebElement secondPatient;
+    @FindBy(xpath = "//h1[contains(text(),'Merging cannot be undone!')]")
+    public WebElement beforeMergeMessage;
+    @FindBy(xpath = "//div[@class=\"float-sm-right\"] // span")
+    public List<WebElement> mergedPatientIDs;
+
 
 }
