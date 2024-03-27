@@ -9,12 +9,12 @@ public class Logout extends BaseDriver {
 
     @Test
     public void logout() {
-
+        //Login Process
         ome.mySendKeys(ome.usernamePlc, usernameStr);
         ome.mySendKeys(ome.passwordPlc, passwordStr);
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
-        //
+        //Logout Process
         ome.myClick(ome.logoutButton);
 
 
