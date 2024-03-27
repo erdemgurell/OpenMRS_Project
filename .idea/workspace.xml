@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="465fea11-4820-44ac-9a6a-e245300d34b0" name="Changes" comment="US_409 Patient address information">
-      <change afterPath="$PROJECT_DIR$/src/US_410/SystemTimeZone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/OpenMRS_Elements.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +78,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.PatientListing.login.executor": "Debug",
     "TestNG.PatientListing.patientListing.executor": "Run",
-    "TestNG.PatientRecordMerge.patientRecordMerge.executor": "Run",
-    "TestNG.SystemTimeZone.executor": "Run",
+
     "TestNG.den.executor": "Run",
     "TestNG.den.te.executor": "Run",
     "TestNG.den.test.executor": "Run",
@@ -103,36 +99,6 @@
       <recent name="Utility" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SystemTimeZone">
-    <configuration name="PatientDeletion" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenMRS_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="US_407.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="US_407" />
-      <option name="MAIN_CLASS_NAME" value="US_407.PatientDeletion" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PatientDeletion.login" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="OpenMRS_Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="US_407.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="US_407" />
-      <option name="MAIN_CLASS_NAME" value="US_407.PatientDeletion" />
-      <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -182,11 +148,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SystemTimeZone" />
-        <item itemvalue="TestNG.PatientDeletion.login" />
-        <item itemvalue="TestNG.PatientDeletion" />
-        <item itemvalue="TestNG.den.test" />
-        <item itemvalue="TestNG.den.te" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +257,6 @@
       <option name="project" value="LOCAL" />
       <updated>1711438895530</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +294,6 @@
     <MESSAGE value="US_409 Patient full name info filled" />
     <MESSAGE value="US_409 Patient gender and birthdate" />
     <MESSAGE value="US_409 Patient address information" />
-    <option name="LAST_COMMIT_MESSAGE" value="US_409 Patient address information" />
+
   </component>
 </project>

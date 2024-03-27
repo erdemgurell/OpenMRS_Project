@@ -22,7 +22,9 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement registrationDesk;
     @FindBy(id = "loginButton")
     public WebElement loginButton;
-    @FindBy(xpath = "//a[@id='referenceapplication-registrationapp-registerPatient-homepageLink-referenceapplication-registrationapp-registerPatient-homepageLink-extension']")
+    @FindBy(xpath = "//a[@id='referenceapplication-registrationapp" +
+            "-registerPatient-homepageLink-referenceapplication-registrationapp" +
+            "-registerPatient-homepageLink-extension']")
     public WebElement registerAPatient;
     @FindBy(xpath = "//input[@name='givenName']")
     public WebElement givenNamePlc;
@@ -82,6 +84,7 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement patientListInfo;
     @FindBy(id = "patient-search-results-table_next")
     public WebElement patientListNextBtn;
+
     @FindBy(xpath = "//a[@id='appointmentschedulingui-homeAppLink-appointmentschedulingui-homeAppLink-extension']")
     public WebElement appointmentScheduling;
     @FindBy(xpath = "//a[@id='appointmentschedulingui-manageAppointments-app']")
@@ -90,6 +93,28 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement timeZoneWarningMessage;
     @FindBy(xpath = "//td[contains(text(),'Robert Smith')]")
     public WebElement getSearchedPatientForApt;
+
+    @FindBy(css = "div[class=\"logo\"]")
+    public WebElement homePageBtn;
+    @FindBy(css = "div[class=\"float-sm-right\"] span")
+    public WebElement patientID;
+    @FindBy(css = "a[id=\"coreapps-datamanagement-homepageLink-coreapps-datamanagement-homepageLink-extension\"]")
+    public WebElement dataManagement;
+    @FindBy(css = "a[id=\"coreapps-mergePatientsHomepageLink-app\"]")
+    public WebElement mergePatientBtn;
+    @FindBy(id = "patient1-text")
+    public WebElement patient1;
+    @FindBy(id = "patient2-text")
+    public WebElement patient2;
+    @FindBy(id = "confirm-button")
+    public WebElement mergeContinueBtn;
+    @FindBy(id = "second-patient")
+    public WebElement secondPatient;
+    @FindBy(xpath = "//h1[contains(text(),'Merging cannot be undone!')]")
+    public WebElement beforeMergeMessage;
+    @FindBy(xpath = "//div[@class=\"float-sm-right\"] // span")
+    public List<WebElement> mergedPatientIDs;
+
 
 
 }
