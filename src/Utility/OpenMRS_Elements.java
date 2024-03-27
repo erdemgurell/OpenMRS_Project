@@ -124,5 +124,7 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement myLanguages;
 
 
+    @FindBy(css= "[class='icon-signout small']")
+    public WebElement logoutButton;
 
 }
