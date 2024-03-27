@@ -105,5 +105,7 @@ public class OpenMRS_Elements extends ParentPage {
     @FindBy(xpath = "//div[@class=\"float-sm-right\"] // span")
     public List<WebElement> mergedPatientIDs;
 
+    @FindBy(css= "[class='icon-signout small']")
+    public WebElement logoutButton;
 
 }
