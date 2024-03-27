@@ -123,6 +123,8 @@ public class PatientRecordMerge extends BaseDriver {
         ID2 = ome.patientID.getText();
 
         ome.myClick(ome.homePageBtn);
+
+
     }
 
     @Test(priority = 4)
@@ -138,13 +140,13 @@ public class PatientRecordMerge extends BaseDriver {
         new Actions(driver).sendKeys(Keys.ENTER).build().perform();
         ome.myClick(ome.mergeContinueBtn);
 
-        pp.verifyContainsText(ome.beforeMergeMessage,"undone");
+        pp.verifyContainsText(ome.beforeMergeMessage, "undone");
 
         ome.myClick(ome.secondPatient);
         ome.myClick(ome.mergeContinueBtn);
 
 
         // Assertion for success message
-        Assert.assertEquals(ome.mergedPatientIDs.size(),2);
+        Assert.assertEquals(ome.mergedPatientIDs.size(), 2);
     }
 }
