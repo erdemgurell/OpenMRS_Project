@@ -122,9 +122,11 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement changePassword;
     @FindBy(xpath = "//div[@id='tasks']//a[2]")
     public WebElement myLanguages;
-
-
     @FindBy(css= "[class='icon-signout small']")
     public WebElement logoutButton;
+    @FindBy(id="sessionLocationError")
+    public WebElement sessionLocationError;
+    @FindBy(id="error-message")
+    public WebElement errorMessage;
 
 }
