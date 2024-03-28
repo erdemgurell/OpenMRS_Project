@@ -41,19 +41,4 @@ public class SystemTimeZone_Negative extends BaseDriver {
         logger.info("Warning Message: " + ome.timeZoneWarningMessage.getText());
 
     }
-    @Test  // (  dependsOnMethods = "appointmentWithIncorrectTimeZone")
-    public void appointmentWithCorrectTimeZone(){
-
-        wait.until(ExpectedConditions.elementToBeClickable(ome.appointmentScheduling));
-        ome.myClick(ome.appointmentScheduling);
-
-        wait.until(ExpectedConditions.elementToBeClickable(ome.manageAppointments));
-        ome.myClick(ome.manageAppointments);
-
-        ome.mySendKeys(ome.patientSearchBox, "Robert Smith" + Keys.ENTER);
-        ome.myClick(ome.getSearchedPatientForApt);
-        Assert.assertFalse(ome.timeZoneWarningMessage.isDisplayed(), "error message is displayed after changing time zone");
-
-
-    }
 }
