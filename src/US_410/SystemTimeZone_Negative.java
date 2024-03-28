@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 // Username: admin
 // Password: Admin123
 // Website: https://demo.openmrs.org/openmrs/login.htm
-public class SystemTimeZone extends BaseDriver {
+public class SystemTimeZone_Negative extends BaseDriver {
     String usernameStr = "admin";
     String passwordStr = "Admin123";
 
@@ -21,7 +21,7 @@ public class SystemTimeZone extends BaseDriver {
         // Enter the valid credentials (valid credentials are specified above.)
         ome.mySendKeys(ome.usernamePlc, usernameStr);
         ome.mySendKeys(ome.passwordPlc, passwordStr);
-        ome.myClick(ome.registrationDesk);
+        ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
     }
     @Test(priority = 2)
@@ -37,11 +37,23 @@ public class SystemTimeZone extends BaseDriver {
         ome.myClick(ome.getSearchedPatientForApt);
 
         wait.until(ExpectedConditions.elementToBeClickable(ome.timeZoneWarningMessage));
-        Assert.assertTrue(ome.timeZoneWarningMessage.isDisplayed(), "No warning message is present!");
-        logger.info("Warning message: " + ome.timeZoneWarningMessage.getText());
+        Assert.assertTrue(ome.timeZoneWarningMessage.isDisplayed(),"No warning message is displayed !");
+        logger.info("Warning Message: " + ome.timeZoneWarningMessage.getText());
+
     }
-    @Test
+    @Test  // (  dependsOnMethods = "appointmentWithIncorrectTimeZone")
     public void appointmentWithCorrectTimeZone(){
+
+        wait.until(ExpectedConditions.elementToBeClickable(ome.appointmentScheduling));
+        ome.myClick(ome.appointmentScheduling);
+
+        wait.until(ExpectedConditions.elementToBeClickable(ome.manageAppointments));
+        ome.myClick(ome.manageAppointments);
+
+        ome.mySendKeys(ome.patientSearchBox, "Robert Smith" + Keys.ENTER);
+        ome.myClick(ome.getSearchedPatientForApt);
+        Assert.assertFalse(ome.timeZoneWarningMessage.isDisplayed(), "error message is displayed after changing time zone");
+
 
     }
 }
