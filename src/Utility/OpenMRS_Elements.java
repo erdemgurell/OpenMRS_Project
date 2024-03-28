@@ -84,16 +84,16 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement patientListInfo;
     @FindBy(id = "patient-search-results-table_next")
     public WebElement patientListNextBtn;
+
     @FindBy(xpath = "//a[@id='appointmentschedulingui-homeAppLink-appointmentschedulingui-homeAppLink-extension']")
     public WebElement appointmentScheduling;
     @FindBy(xpath = "//a[@id='appointmentschedulingui-manageAppointments-app']")
     public WebElement manageAppointments;
     @FindBy(xpath = "//p[contains(text(),'Your computer is not set to the right time zone. P')]")
     public WebElement timeZoneWarningMessage;
-    @FindBy(xpath = "//div[@id='time-zone-warning']")
-    public WebElement timeZoneWarningMessage2;
     @FindBy(xpath = "//td[contains(text(),'Robert Smith')]")
     public WebElement getSearchedPatientForApt;
+
     @FindBy(css = "div[class=\"logo\"]")
     public WebElement homePageBtn;
     @FindBy(css = "div[class=\"float-sm-right\"] span")
@@ -114,5 +114,19 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement beforeMergeMessage;
     @FindBy(xpath = "//div[@class=\"float-sm-right\"] // span")
     public List<WebElement> mergedPatientIDs;
+    @FindBy(xpath = "//li[@class='nav-item identifier']")
+    public WebElement adminButton;
+    @FindBy(xpath = "//*[@id='user-account-menu']/li/a")
+    public WebElement myAccount;
+    @FindBy(xpath = "//div[@id='tasks']//a[1]")
+    public WebElement changePassword;
+    @FindBy(xpath = "//div[@id='tasks']//a[2]")
+    public WebElement myLanguages;
+    @FindBy(css= "[class='icon-signout small']")
+    public WebElement logoutButton;
+    @FindBy(id="sessionLocationError")
+    public WebElement sessionLocationError;
+    @FindBy(id="error-message")
+    public WebElement errorMessage;
 
 }
