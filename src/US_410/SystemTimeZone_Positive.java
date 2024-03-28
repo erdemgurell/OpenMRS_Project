@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 // Username: admin
 // Password: Admin123
 // Website: https://demo.openmrs.org/openmrs/login.htm
+
 public class SystemTimeZone_Positive extends BaseDriver {
     String usernameStr = "admin";
     String passwordStr = "Admin123";
@@ -19,13 +20,17 @@ public class SystemTimeZone_Positive extends BaseDriver {
 
         // Log in to the application homepage as an admin user.
         // Enter the valid credentials (valid credentials are specified above.)
+
         ome.mySendKeys(ome.usernamePlc, usernameStr);
         ome.mySendKeys(ome.passwordPlc, passwordStr);
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
     }
-    @Test  // (  dependsOnMethods = "appointmentWithIncorrectTimeZone")
+    @Test
     public void appointmentWithCorrectTimeZone(){
+
+        // Set the computer system time to GMT+0, and follow the same steps
+        // After changing the computer time, the warning message should no longer appear.
 
         wait.until(ExpectedConditions.elementToBeClickable(ome.appointmentScheduling));
         ome.myClick(ome.appointmentScheduling);
