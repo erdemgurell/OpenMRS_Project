@@ -36,15 +36,13 @@ public class SystemTimeZone_Negative extends BaseDriver {
         ome.mySendKeys(ome.patientSearchBox, "Robert Smith" + Keys.ENTER);
         ome.myClick(ome.getSearchedPatientForApt);
 
-        wait.until(ExpectedConditions.elementToBeClickable(ome.timeZoneWarningMessage2));
-        Assert.assertTrue(ome.timeZoneWarningMessage2.isDisplayed(),"No warning message is displayed !");
-        logger.info("Warning Message: " + ome.timeZoneWarningMessage2.getText());
+        wait.until(ExpectedConditions.elementToBeClickable(ome.timeZoneWarningMessage));
+        Assert.assertTrue(ome.timeZoneWarningMessage.isDisplayed(),"No warning message is displayed !");
+        logger.info("Warning Message: " + ome.timeZoneWarningMessage.getText());
 
     }
     @Test  // (  dependsOnMethods = "appointmentWithIncorrectTimeZone")
     public void appointmentWithCorrectTimeZone(){
-
-        login();
 
         wait.until(ExpectedConditions.elementToBeClickable(ome.appointmentScheduling));
         ome.myClick(ome.appointmentScheduling);
