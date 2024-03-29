@@ -87,6 +87,3 @@ This Selenium test automation project aims to ensure the functionality and relia
 - Ahmet - (github.com/0AhmetKaya0)
 - Faruk - (github.com/faruk-ayrcc25)
 
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md)
