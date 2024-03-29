@@ -24,6 +24,7 @@ public class SystemTimeZone_Negative extends BaseDriver {
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
     }
+
     @Test(priority = 2)
     public void appointmentWithIncorrectTimeZone() {
 
@@ -40,7 +41,7 @@ public class SystemTimeZone_Negative extends BaseDriver {
         ome.myClick(ome.getSearchedPatientForApt);
 
         wait.until(ExpectedConditions.elementToBeClickable(ome.timeZoneWarningMessage));
-        Assert.assertTrue(ome.timeZoneWarningMessage.isDisplayed(),"No warning message is displayed !");
+        Assert.assertTrue(ome.timeZoneWarningMessage.isDisplayed(), "No warning message is displayed !");
         logger.info("Warning Message: " + ome.timeZoneWarningMessage.getText());
 
     }

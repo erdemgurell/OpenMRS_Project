@@ -3,7 +3,7 @@ package US_406;
 import Utility.BaseDriver;
 import org.testng.annotations.Test;
 
-public class PatientSearchInPatientList_Pozitive extends BaseDriver {
+public class PatientSearchInPatientList_Positive extends BaseDriver {
     String usernameStr = "admin";
     String passwordStr = "Admin123";
 

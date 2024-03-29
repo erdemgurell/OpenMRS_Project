@@ -17,6 +17,5 @@ public class Logout extends BaseDriver {
         //Logout Process
         ome.myClick(ome.logoutButton);
 
-
     }
 }

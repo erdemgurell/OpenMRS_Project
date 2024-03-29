@@ -38,6 +38,7 @@ public class PatientDeletion extends BaseDriver {
         ome.myClick(ome.registrationDesk);
         ome.myClick(ome.loginButton);
     }
+
     @Test(priority = 2)
     public void patientRegistration() {
 
@@ -74,16 +75,18 @@ public class PatientDeletion extends BaseDriver {
         ome.myClick(ome.confirmButton);
 
     }
+
     @Test(priority = 3)
     public void deleteThePatientRecord() {
         // Under the General Actions tab, locate and click on the Delete Patient link.
         wait.until(ExpectedConditions.elementToBeClickable(ome.deletePatientButton));
         ome.myClick(ome.deletePatientButton);
 
-       // Enter a valid reason and confirm the deletion action.
+        // Enter a valid reason and confirm the deletion action.
         ome.mySendKeys(ome.deletionReason, "Privacy");
         ome.myClick(ome.deletionConfirmButton);
     }
+
     @Test(priority = 4, dependsOnMethods = {"deleteThePatientRecord"})
     public void verifyTheDeletion() {
 
