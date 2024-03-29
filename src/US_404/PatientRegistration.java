@@ -14,6 +14,10 @@ public class PatientRegistration extends BaseDriver {
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
     }
+    public void RegisteraPatientbtn(){
+       ome.myClick(ome.registerAPatient);
+
+    }
 
 
 }
