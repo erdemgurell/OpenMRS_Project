@@ -124,6 +124,7 @@ public class PatientRecordMerge extends BaseDriver {
 
         ome.myClick(ome.homePageBtn);
 
+
     }
 
     @Test(priority = 4)

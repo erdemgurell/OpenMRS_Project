@@ -95,6 +95,5 @@ public class PatientDeletion extends BaseDriver {
         wait.until(ExpectedConditions.elementToBeClickable(ome.noMatchingRecordMsg));
         Assert.assertNotEquals(ome.noMatchingRecordMsg.getText(), "Cosette Tholomyes", "No matching records found");
         logger.info("Search result: " + ome.noMatchingRecordMsg.getText());
-
     }
 }
