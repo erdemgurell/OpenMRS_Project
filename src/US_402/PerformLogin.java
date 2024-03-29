@@ -15,6 +15,7 @@ public class PerformLogin extends BaseDriver {
         ome.mySendKeys(ome.passwordPlc, passwordStr);
         ome.myClick(ome.registrationDesk);
         ome.myClick(ome.loginButton);
+
     }
 
 }
