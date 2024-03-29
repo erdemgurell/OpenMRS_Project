@@ -1,7 +1,9 @@
 package US_404;
 
 import Utility.BaseDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PatientRegistration extends BaseDriver {
@@ -64,5 +66,7 @@ public class PatientRegistration extends BaseDriver {
         ome.myClick(ome.nextButton);
         ome.myClick(ome.confirmButton);
 
+        wait.until(ExpectedConditions.visibilityOf(ome.patientID));
+        Assert.assertTrue(ome.patientID.isDisplayed());
     }
 }

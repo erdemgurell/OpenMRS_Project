@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class OpenMRS_Elements extends ParentPage {
-
     public OpenMRS_Elements() {
         PageFactory.initElements(BaseDriver.driver, this);
     }
@@ -84,7 +83,6 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement patientListInfo;
     @FindBy(id = "patient-search-results-table_next")
     public WebElement patientListNextBtn;
-
     @FindBy(xpath = "//a[@id='appointmentschedulingui-homeAppLink-appointmentschedulingui-homeAppLink-extension']")
     public WebElement appointmentScheduling;
     @FindBy(xpath = "//a[@id='appointmentschedulingui-manageAppointments-app']")
@@ -93,7 +91,6 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement timeZoneWarningMessage;
     @FindBy(xpath = "//td[contains(text(),'Robert Smith')]")
     public WebElement getSearchedPatientForApt;
-
     @FindBy(css = "div[class=\"logo\"]")
     public WebElement homePageBtn;
     @FindBy(css = "div[class=\"float-sm-right\"] span")
@@ -122,28 +119,21 @@ public class OpenMRS_Elements extends ParentPage {
     public WebElement changePassword;
     @FindBy(xpath = "//div[@id='tasks']//a[2]")
     public WebElement myLanguages;
-    @FindBy(css= "[class='icon-signout small']")
+    @FindBy(css = "[class='icon-signout small']")
     public WebElement logoutButton;
-    @FindBy(id="sessionLocationError")
+    @FindBy(id = "sessionLocationError")
     public WebElement sessionLocationError;
-    @FindBy(id="error-message")
+    @FindBy(id = "error-message")
     public WebElement errorMessage;
-
-    @FindBy(xpath="(//i[@class='icon-calendar'])[1]")
+    @FindBy(xpath = "(//i[@class='icon-calendar'])[1]")
     public WebElement activeVisits;
-
-    @FindBy(css="[id='active-visits_filter'] input")
+    @FindBy(css = "[id='active-visits_filter'] input")
     public WebElement fenceBox;
-
-
-    @FindBy(xpath="(//*[@id='active-visits']//a)[1]")
+    @FindBy(xpath = "(//*[@id='active-visits']//a)[1]")
     public WebElement nameFence;
-
-    @FindBy(css="[class='col-11 col-lg-10']")
+    @FindBy(css = "[class='col-11 col-lg-10']")
     public List<WebElement> patientInformation;
-
     @FindBy(xpath = "//td[contains(text(),'No entries')]")
     public WebElement NoEntriesText;
-
 
 }
