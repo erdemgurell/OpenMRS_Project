@@ -27,6 +27,9 @@ public class SystemTimeZone_Negative extends BaseDriver {
     @Test(priority = 2)
     public void appointmentWithIncorrectTimeZone() {
 
+        //  The system should accurately reflect the user's current time zone setting.
+        //  And the detected time zone should be different from GMT+0. (Set the computer's time zone to a value other than UTC+0 (GMT+0))
+
         wait.until(ExpectedConditions.elementToBeClickable(ome.appointmentScheduling));
         ome.myClick(ome.appointmentScheduling);
 
