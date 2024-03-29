@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class PatientSearchInPatientList_Pozitive extends BaseDriver {
+public class PatientSearchInPatientList_Positive extends BaseDriver {
     String usernameStr = "admin";
     String passwordStr = "Admin123";
     String fenceName = "Javier";

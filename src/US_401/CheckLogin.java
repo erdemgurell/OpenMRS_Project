@@ -9,15 +9,15 @@ public class CheckLogin extends BaseDriver {
 
     String usernameStr = "admin";
     String passwordStr = "Admin123";
-    String unvalidUserameStr="admin1";
+    String unvalidUserameStr = "admin1";
     String unvalidPasswordStr = "admin1.";
 
     @Test(priority = 1)
-    public void checkLoginFirst(){
+    public void checkLoginFirst() {
         ome.mySendKeys(ome.usernamePlc, unvalidUserameStr);
         ome.mySendKeys(ome.passwordPlc, unvalidPasswordStr);
         ome.myClick(ome.loginButton);
-        Assert.assertTrue(ome.sessionLocationError.isDisplayed(),"Not Found");
+        Assert.assertTrue(ome.sessionLocationError.isDisplayed(), "Not Found");
         System.out.println("Warning Message:  " + ome.sessionLocationError.getText());
         ome.myClick(ome.inpatientWard);
 
@@ -30,7 +30,7 @@ public class CheckLogin extends BaseDriver {
         ome.mySendKeys(ome.passwordPlc, password);
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
-        Assert.assertTrue(ome.errorMessage.isDisplayed(),"Not Found");
+        Assert.assertTrue(ome.errorMessage.isDisplayed(), "Not Found");
         System.out.println("Warning Message:  " + ome.errorMessage.getText());
     }
 
@@ -48,10 +48,10 @@ public class CheckLogin extends BaseDriver {
     }
 
     @Test(priority = 3)
-    public void succesLogin(){
-       ome.mySendKeys(ome.usernamePlc, usernameStr);
-       ome.mySendKeys(ome.passwordPlc, passwordStr);
-       ome.myClick(ome.inpatientWard);
-       ome.myClick(ome.loginButton);
+    public void succesLogin() {
+        ome.mySendKeys(ome.usernamePlc, usernameStr);
+        ome.mySendKeys(ome.passwordPlc, passwordStr);
+        ome.myClick(ome.inpatientWard);
+        ome.myClick(ome.loginButton);
     }
 }

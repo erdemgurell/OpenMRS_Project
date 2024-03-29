@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 
 public class MyAccount extends BaseDriver {
     @Test
-    public void myAccountTest(){
-        Actions act=new Actions(driver);
-        ome.mySendKeys(ome.usernamePlc,"admin");
-        ome.mySendKeys(ome.passwordPlc,"Admin123");
+    public void myAccountTest() {
+        Actions act = new Actions(driver);
+        ome.mySendKeys(ome.usernamePlc, "admin");
+        ome.mySendKeys(ome.passwordPlc, "Admin123");
 
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
@@ -20,7 +20,6 @@ public class MyAccount extends BaseDriver {
 
         Assert.assertTrue(ome.changePassword.isDisplayed());
         Assert.assertTrue(ome.myLanguages.isDisplayed());
-
 
     }
 }
