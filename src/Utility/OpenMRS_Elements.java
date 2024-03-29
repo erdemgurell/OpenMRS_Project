@@ -129,4 +129,21 @@ public class OpenMRS_Elements extends ParentPage {
     @FindBy(id="error-message")
     public WebElement errorMessage;
 
+    @FindBy(xpath="(//i[@class='icon-calendar'])[1]")
+    public WebElement activeVisits;
+
+    @FindBy(css="[id='active-visits_filter'] input")
+    public WebElement fenceBox;
+
+
+    @FindBy(xpath="(//*[@id='active-visits']//a)[1]")
+    public WebElement nameFence;
+
+    @FindBy(css="[class='col-11 col-lg-10']")
+    public List<WebElement> patientInformation;
+
+    @FindBy(xpath = "//td[contains(text(),'No entries')]")
+    public WebElement NoEntriesText;
+
+
 }
