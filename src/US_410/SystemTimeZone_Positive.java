@@ -24,8 +24,9 @@ public class SystemTimeZone_Positive extends BaseDriver {
         ome.myClick(ome.inpatientWard);
         ome.myClick(ome.loginButton);
     }
+
     @Test  // (  dependsOnMethods = "appointmentWithIncorrectTimeZone")
-    public void appointmentWithCorrectTimeZone(){
+    public void appointmentWithCorrectTimeZone() {
 
         wait.until(ExpectedConditions.elementToBeClickable(ome.appointmentScheduling));
         ome.myClick(ome.appointmentScheduling);
