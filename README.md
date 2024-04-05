@@ -80,10 +80,15 @@ This Selenium test automation project aims to ensure the functionality and relia
 - Review test results and log files for any failures or errors.
 
 ## Contributors
+## Team Members
 
-- NigarAylaOzcanan - (github.com/NigarAylaOzcanan)
-- Onur Girgin - (github.com/Mednasa)
-- Beyzanur - (github.com/beyzanurer)
-- Ahmet - (github.com/0AhmetKaya0)
-- Faruk - (github.com/faruk-ayrcc25)
+| Name                    | Role            | GitHub                                           | 
+|-------------------------|-----------------|--------------------------------------------------|
+| Erdem Gurel             | Team Lead & QA Engineer     | [Erdem Gurel](https://github.com/artam109)    | 
+| Nigar Ayla Özcanan      | QA Engineer     | [Nigar Ayla Özcanan](https://github.com/NigarAylaOzcanan) | 
+| Ahmet Kaya              | QA Engineer     | [Ahmet Kaya](https://github.com/0AhmetKaya0) | 
+| Onur Girgin             | QA Engineer   | [Onur Girgin](https://github.com/Mednasa) | 
+| Beyza Nur Er            | QA Engineer     | [Beyza Nur Er](https://github.com/beyzanurer)   | 
+| Omer Faruk             | QA Engineer   | [Omer Faruk](https://github.com/faruk-ayrcc25) | 
+
 
